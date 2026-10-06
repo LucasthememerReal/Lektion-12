@@ -1,0 +1,36 @@
+
+p {
+  font-family: "Sofia", sans-serif;
+  background: rgb(99, 195, 202);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+}
+.ShowButton {
+  /* 1. Colors & Typography */
+  background-color: #ffc710; /* Primary blue background */
+  color: #ffffff;            /* White text color */
+  font-size: 16px;           /* Text size */
+  font-weight: bold;         /* Make text pop */
+
+  /* 2. Spacing & Sizing */
+  padding: 12px 24px;        /* Vertical and horizontal spacing inside the button */
+  border: none;              /* Remove the default harsh browser border */
+  
+  /* 3. Shape & Aesthetics */
+  border-radius: 6px;        /* Rounded corners */
+  cursor: pointer;           /* Changes the mouse cursor to a hand tool on hover */
+  
+  /* 4. Smooth Animations */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* 5. Hover State (When a user mouse-overs the button) */
+.custom-button:hover {
+  background-color: #ffd000; /* Darker blue on hover */
+}
+
+/* 6. Active State (When the button is being clicked) */
+.custom-button:active {
+  transform: scale(0.98);    /* Slightly shrinks the button for a realistic click feel */
+}
