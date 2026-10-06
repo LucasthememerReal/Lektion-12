@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Lektion12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    Body {
+        font-family: "Clarity City", sans-serif;
+    }
+        #myImage {
+            display: none;
+            margin-top: 15px;
+            max-width: 300px;
+        }
+
+    </style>
+</head>
+<body background="Images/original-1bf20077489beeac88818f2d4591390e.gif">
+
+
+
+    <link rel="stylesheet" href="Styles/Style.css">
+    <h1 style="color:orangered">Good Website</h1>
+    <h2 style="color: orangered">Only Good Things Here!</h2>
+
+    <button class="ShowButton" id="showBtn" onclick="changeColor()" style="color:orangered" background="Images/deltarune-deltarune-flowey.gif">PRESS ME FOR FUN!</button>
+    <img id="myImage" src="Images/deltarune-deltarune-flowey.gif" alt="Sample Image">
+ 
+    <script>
+    function changeColor() {
+    // Find the button by its ID and alter its style property
+    const button = document.getElementById("showBtn");
+    button.style.backgroundColor = ("Yellow"); // Change to red";
+    }
+    </script>
+    <script>
+        const image = document.getElementById('myImage');
+        const button = document.getElementById('showBtn');
+
+        button.addEventListener('click', function () {
+            const audio = new Audio('Sounds/deltarune-jarona.mp3');
+            audio.play();
+        });
+
+        button.addEventListener('click', function () {
+            image.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
